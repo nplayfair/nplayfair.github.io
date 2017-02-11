@@ -27,3 +27,11 @@ h1 {
 h2 {
 	color: $subheading;
 }
+
+// Basic layout classes
+
+.vertical-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
