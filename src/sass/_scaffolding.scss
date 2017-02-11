@@ -1,0 +1,16 @@
+// set fonts
+
+html {
+	font: $font-style $font-size $font-weight $font-family;
+}
+
+h1 {
+	font-family: $header-font;
+}
+
+
+// Colours
+
+body {
+	background-color: $bg;
+}
