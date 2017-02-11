@@ -1,5 +1,7 @@
 // set fonts
-
+* {
+	box-sizing: border-box;
+}
 html {
 	font: $font-style $font-size $font-weight $font-family;
 }
@@ -81,8 +83,6 @@ body {
 
 main {
 	flex: 1;
-
-	
 	justify-content: flex-end;
 
 	p {
@@ -91,12 +91,17 @@ main {
 	}
 }
 
-#main_image {
-	flex: 1 2;
-	align-self: center;
+#photograph {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 100%;
+	max-height: 500px;
+}
+
+img#main_image {
 	max-width: 100%;
-	opacity: 0.25;	
-	@media only screen and ('min-device-width: 320px') {
-		max-width: 80%;
-	}
+	max-height: 80%;
+	opacity: $img_opacity;
+
 }

@@ -6,6 +6,9 @@ $font-weight: normal;
 $font-family: Raleway, Helvetica Neue, Arial, sans-serif;
 $header-font: Playfair Display, Times New Roman, Times, serif;
 
+// Others
+
+$img_opacity: 0.25;
 
 // Colours
 
@@ -15,3 +18,6 @@ $h1col: #fffff0;
 $subheading: #cafa13;
 $navbg: #fffff0;
 $text-col: #fffff0;
+$imgtopcol: rgba(31,7,33, $img_opacity);
+
+
