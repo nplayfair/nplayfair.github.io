@@ -8,9 +8,22 @@ h1 {
 	font-family: $header-font;
 }
 
+h2 {
+	font-family: $font-family;
+}
+
 
 // Colours
 
 body {
 	background-color: $bg;
+	color: $text-col;
+}
+
+h1 {
+	color: $h1col;
+}
+
+h2 {
+	color: $subheading;
 }
