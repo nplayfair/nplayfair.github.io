@@ -8,7 +8,7 @@
 		body {
 			display: grid;
 			grid-template-columns: 40% 20% 40%;
-			grid-template-rows: 10% 1fr 1fr;
+			grid-template-rows: 10% 30% 1fr;
 			align-items: stretch;
 			justify-items: stretch;
 		}
@@ -36,7 +36,23 @@
 
 		nav {
 			grid-column: 3;
+			padding-bottom: 5px;
+			padding-top: 5px;
 
+		}
+
+		main {
+			grid-column: 1;
+			grid-row: 5 / span 1;
+			border: 1px solid limegreen;
+			display: flex;
+			flex-direction: row;
+
+		}
+
+		#photograph {
+			opacity: 1;
+			border: 1px solid yellow;
 		}
 
 	}
@@ -44,7 +60,7 @@
 }
 
 // Colours
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $tablet) {
 
 	@supports (display: grid) {
 		nav, main {
@@ -61,13 +77,16 @@
 		}
 	}
 }
-
-// Fonts
-h1 {
-	font-size: 4rem;
-	font-weight: normal;
-	text-align: right;
+@media only screen and (min-width: $tablet) {
+	@supports (display: grid) {
+		// Fonts
+		h1 {
+			font-size: 4rem;
+			font-weight: normal;
+			text-align: right;
+		}
+	}
 }
-
+// Photo
 
 
