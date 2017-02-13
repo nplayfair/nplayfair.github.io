@@ -1,10 +1,11 @@
 _site
-.jekyll-metadata
 .DS_Store
 .jekyll
 .bundle
 .sass-cache
 Gemfile
 Gemfile.lock
-node_modules
-package.json
+.jekyll-metadata
+.DS_Store
+node_modules/
+IMG_4989.jpg

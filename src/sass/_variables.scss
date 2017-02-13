@@ -1,0 +1,37 @@
+// Typography
+
+$font-size: 16px;
+$font-style: normal;
+$font-weight: normal;
+$font-family: Raleway, Helvetica Neue, Arial, sans-serif;
+$header-font: Playfair Display, Times New Roman, Times, serif;
+
+// Others
+
+$img_opacity: 0.25;
+
+// Colours
+
+$bg: #292927;
+$bg_transparent: rgba(41, 41, 39, 0.2);
+$header: #8100df;
+$h1col: #fffff0;
+$subheading: #cafa13;
+$navbg: #fffff0;
+$text-col: #fffff0;
+$imgtopcol: rgba(31,7,33, $img_opacity);
+$link_border: #8100df;
+
+// Device widths
+
+$iphone5: 320px;
+$iphone6: 374px;
+$iphone6plus: 410px;
+
+$tablet: 767px;
+
+$desktop: 900px;
+
+// Layout
+
+$headerskew: 45deg;

@@ -1,0 +1,125 @@
+// Tablet enhancements
+
+// Layout 
+@media only screen and (min-width: $tablet) {
+
+	@supports (display: grid) {
+		// Grid layout
+		body {
+			display: grid;
+			grid-template-columns: 40% 20% 40%;
+			grid-template-rows: 100px 240px 30px 1fr;
+			align-items: stretch;
+			justify-items: stretch;
+			max-width: 100vw;
+		}
+
+		div#headercontainer {
+			grid-column: 1 / span 2;
+			grid-row: 1 / span 2;
+			align-self: flex-end;
+			display: flex;
+			justify-content: flex-end;
+			transform-origin: left top;
+			transform: skewX($headerskew);
+			min-height: 100%;
+			width: 100%;
+			z-index: -1;
+
+		}
+
+		header {
+			grid-column: 2 / span 2;
+			grid-row: 1 / span 2;
+			align-self: flex-start;
+			justify-content: center;
+			height: 90%;
+			display: flex;
+			flex-direction: column;
+				h1 {
+					max-width: 80%;
+					padding-top: 0em;
+					margin-top: 0;
+				}
+		}
+
+		nav {
+			grid-column: 2 / span 2;
+			grid-row: 3;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			width: 100%;
+		}
+
+		main {
+			grid-column: 1 / span 3;
+			grid-row: 4 / span 2;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		main section {
+			max-width: 50%;
+		}
+
+		main section p {
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-bottom: 2em;
+		}
+
+		div#photograph {
+			display: none;
+		}
+	}
+}
+
+// Colours
+@media only screen and (min-width: $tablet) {
+
+	@supports (display: grid) {
+		nav, main {
+			background-color: $bg;
+				ul {color: $text-col;}
+		}
+		body {
+			background: none;
+			background-color: $bg;
+		}
+		#headercontainer, h1 {
+			background-color: $header;
+		}
+
+		div#photograph {
+			background: none;
+		}
+		main {
+			background: url('/img/bluewheel.jpg') no-repeat top;
+			background-size: cover;
+			
+				section {
+
+				}
+		}
+	}
+}
+@media only screen and (min-width: $tablet) {
+	@supports (display: grid) {
+		// Fonts
+		h1 {
+			font-size: 4rem;
+			font-weight: normal;
+			text-align: right;
+		}
+		main p {
+			font-size: 1.3em;
+		}
+		h2 {
+			display: none;
+		}
+	}
+}
+
+

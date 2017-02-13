@@ -1,0 +1,112 @@
+// set fonts
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font: $font-style $font-size $font-weight $font-family;
+}
+
+h1 {
+	font-family: $header-font;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2 {
+	font-family: $font-family;
+	text-align: center;
+}
+
+nav ul {
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+// Colours
+
+body {
+	color: $text-col;
+	background: linear-gradient($bg, black);
+}
+
+header {
+	background-color: $header;
+}
+
+nav {
+	background-color: $navbg;
+}
+
+h1 {
+	color: $h1col;
+}
+
+h2 {
+	color: $subheading;
+}
+
+// Basic layout classes
+
+header {
+	display: flex;
+	justify-content: center;
+}
+
+.vertical-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// Navigation
+nav {
+	ul {
+		color: $bg;
+		list-style-type: none;
+		li {
+			display: inline-block;
+			margin-left: 8px;
+			padding: 4px 4px 4px 4px;
+			// border-right: 1px solid $link_border;
+		}
+		li:first-of-type {
+			margin-left: 0;
+		}
+	}
+}
+
+.active {
+	background-color: $bg;
+	color: $text-col;
+	font-weight: 700;
+}
+
+// Main
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+main {
+	flex: 1;
+	justify-content: flex-start;
+	p {
+		font-size: 0.8em;
+		padding: 0 8px 0 8px;
+	}
+	@media only screen and (min-width: $iphone6) {
+				p { font-size: 0.9em; }
+			}
+}
+
+div#photograph {
+	height: 50vh;
+	background: url('/img/wheel4.jpg') no-repeat top;
+	opacity: 0.25;
+	background-size: 100%;
+}
+
+
