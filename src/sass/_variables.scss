@@ -1,6 +1,6 @@
 // Typography
 
-$font-size: 1rem;
+$font-size: 16px;
 $font-style: normal;
 $font-weight: normal;
 $font-family: Raleway, Helvetica Neue, Arial, sans-serif;
@@ -22,3 +22,8 @@ $text-col: #fffff0;
 $imgtopcol: rgba(31,7,33, $img_opacity);
 $link_border: #8100df;
 
+// Device widths
+
+$iphone5: 319px;
+$iphone6: 374px;
+$iphone6plus: 410px;
