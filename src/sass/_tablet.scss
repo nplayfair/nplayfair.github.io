@@ -1,0 +1,92 @@
+// Tablet enhancements
+
+// Layout 
+@media only screen and (min-width: 768px) {
+
+	@supports (display: grid) {
+		// Grid layout
+		body {
+			display: grid;
+			grid-template-columns: 40% 20% 40%;
+			grid-template-rows: 10% 30% 1fr;
+			align-items: stretch;
+			justify-items: stretch;
+		}
+
+		div#headercontainer {
+			grid-column: 1 / span 3;
+			grid-row: 1 / span 3;
+			display: flex;
+			justify-content: flex-end;
+			transform: skewX($headerskew);
+			transform-origin: left, bottom;
+		}
+
+		header {
+					h1 {
+						flex: 1;
+						max-width: 80%;
+						padding-top: 1.5em;
+						padding-right: 0.3em;
+						margin-top: 0;
+					}
+				transform: skewX(-$headerskew);
+				justify-content: flex-end;
+		}
+
+		nav {
+			grid-column: 3;
+			padding-bottom: 5px;
+			padding-top: 5px;
+
+		}
+
+		main {
+			grid-column: 1;
+			grid-row: 5 / span 1;
+			border: 1px solid limegreen;
+			display: flex;
+			flex-direction: row;
+
+		}
+
+		#photograph {
+			opacity: 1;
+			border: 1px solid yellow;
+		}
+
+	}
+
+}
+
+// Colours
+@media only screen and (min-width: $tablet) {
+
+	@supports (display: grid) {
+		nav, main {
+			background-color: $bg;
+				ul {color: $text-col;}
+
+		}
+		body {
+			background: none;
+			background-color: $bg;
+		}
+		#headercontainer, h1 {
+			background-color: $header;
+		}
+	}
+}
+@media only screen and (min-width: $tablet) {
+	@supports (display: grid) {
+		// Fonts
+		h1 {
+			font-size: 4rem;
+			font-weight: normal;
+			text-align: right;
+		}
+	}
+}
+// Photo
+
+
