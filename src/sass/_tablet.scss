@@ -11,6 +11,7 @@
 			grid-template-rows: 10% 30% 1fr;
 			align-items: stretch;
 			justify-items: stretch;
+			max-width: 100vw;
 		}
 
 		div#headercontainer {
@@ -53,13 +54,14 @@
 			padding-right: 10px;
 		}
 
-		#photograph {
-			opacity: 1;
+		div#photograph {
+			grid-column: 2 / span 2;
+			align-self: end;
+			opacity: 0.2;
+			margin-top: 100px;
 			border: 1px solid yellow;
 		}
-
 	}
-
 }
 
 // Colours
@@ -77,6 +79,13 @@
 		}
 		#headercontainer, h1 {
 			background-color: $header;
+		}
+		div#photograph {
+			background: none;
+		}
+		main {
+			background: url('/img/greenwheel.jpg') no-repeat top;
+			background-size: cover;
 		}
 	}
 }
