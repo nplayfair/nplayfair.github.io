@@ -23,7 +23,6 @@ nav ul {
 	font-size: 14px;
 }
 
-
 // Colours
 
 body {
@@ -76,12 +75,11 @@ nav {
 	}
 }
 
-
 .active {
 	background-color: $bg;
 	color: $text-col;
+	font-weight: 700;
 }
-
 
 // Main
 body {
@@ -89,25 +87,26 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	background: url('/img/wheelSmall.jpg') no-repeat bottom;
-	background-size: 100vw;
+	background: linear-gradient($bg, black);
 }
 
 main {
-	flex: 0.75;
+	flex: 1;
 	justify-content: flex-start;
 	p {
 		font-size: 0.8em;
 		padding: 0 8px 0 8px;
 	}
-	background-color: $bg;
+	@media only screen and (min-width: $iphone6) {
+				p { font-size: 0.9em; }
+			}
 }
 
 div#photograph {
-	flex: 1.3;
-	background-color: $bg;
-	opacity: 0.85;
-	z-index: 1;
+	height: 50vh;
+	background: url('/img/wheel4.jpg') no-repeat top;
+	opacity: 0.25;
+	background-size: 100%;
 }
 
 
