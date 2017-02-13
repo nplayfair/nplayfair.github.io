@@ -27,6 +27,7 @@ nav ul {
 
 body {
 	color: $text-col;
+	background: linear-gradient($bg, black);
 }
 
 header {
@@ -87,7 +88,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	background: linear-gradient($bg, black);
 }
 
 main {
