@@ -9,3 +9,5 @@ Gemfile.lock
 .DS_Store
 node_modules/
 IMG_4989.jpg
+original_photos/
+sublime.sublime-workspace
