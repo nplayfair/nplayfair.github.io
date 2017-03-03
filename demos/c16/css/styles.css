@@ -1,0 +1,114 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+@font-face {
+  font-family: 'MicrogrammaD-BoldExte';
+  src: url("/css/webfonts/MicrogrammaD-BoldExte.eot?#iefix") format("embedded-opentype"), url("/css/webfonts/MicrogrammaD-BoldExte.otf") format("opentype"), url("/css/webfonts/MicrogrammaD-BoldExte.woff") format("woff"), url("/css/webfonts/MicrogrammaD-BoldExte.ttf") format("truetype"), url("/css/webfonts/MicrogrammaD-BoldExte.svg#MicrogrammaD-BoldExte") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.spectrum {
+  width: 100%;
+  height: 15vh;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#96c0e0+0,0b5da0+20,f7ef00+60,e52810+100 */
+  background: #96c0e0;
+  /* Old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#96c0e0), color-stop(20%, #0b5da0), color-stop(60%, #f7ef00), to(#e52810));
+  background: -webkit-linear-gradient(left, #96c0e0 0%, #0b5da0 20%, #f7ef00 60%, #e52810 100%);
+  background: linear-gradient(to right, #96c0e0 0%, #0b5da0 20%, #f7ef00 60%, #e52810 100%); }
+
+.stripes {
+  position: absolute;
+  width: 100%;
+  height: 15vh;
+  top: 0;
+  background: -webkit-repeating-linear-gradient(left, #fff, #fff 2.5vw, transparent 2.5vw, transparent 5vw);
+  background: repeating-linear-gradient(90deg, #fff, #fff 2.5vw, transparent 2.5vw, transparent 5vw); }
+
+.divider {
+  height: 10px;
+  width: 100%;
+  border-bottom: 10px solid #142393; }
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 96px;
+  color: #142393;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 0.9;
+  letter-spacing: -6px;
+  padding-top: 0.1em; }
+
+em {
+  color: #e52810;
+  font-style: normal; }
+
+footer#footer {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 0.6em;
+  background-color: #e52810;
+  font-family: "MicrogrammaD-BoldExte", sans-serif;
+  font-size: 1.2em;
+  line-height: 0.9;
+  color: #142393; }
+
+#footer::after {
+  content: " ";
+  background-color: #142393;
+  width: 100%;
+  height: 1.2em;
+  position: absolute;
+  left: 0;
+  z-index: -1; }
+
+#tagline {
+  background-color: #fff;
+  margin-left: 4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  padding-top: 0.2em; }
+  #tagline a {
+    text-decoration: none;
+    color: #142393;
+    font-size: 1.2em;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center; }
+  #tagline a:hover {
+    border-bottom: 2px dotted #e52810; }
