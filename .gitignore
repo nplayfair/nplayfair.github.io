@@ -3,11 +3,8 @@ _site
 .jekyll
 .bundle
 .sass-cache
-Gemfile
 Gemfile.lock
 .jekyll-metadata
-.DS_Store
 node_modules/
-IMG_4989.jpg
 original_photos/
 sublime.sublime-workspace
